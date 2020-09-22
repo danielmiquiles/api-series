@@ -1,0 +1,19 @@
+
+    criar grupo de rotas
+    criar migration = php artisan make: migration nome_migration --create=nome_da_tabela
+    em database/migration editar as migration de acordo com o banco de cada uma
+    colocar todas as colunas de cada banco em suas respectivas migration
+    alguns tipos de dados
+    texto = string
+    lembra de coloca o mesmo tipo de dados nas chaves estrangeiras
+    lembra de descomentar a linha do eloquent na pasta bootstrap
+
+    após configurar as migrations podemos criar nossos models
+    com duas propriedades publicas: $timestamps = false e $fillables que é o conteudo
+    que vou querer ter acesso na relacionada ao model
+    alem das funções de relação entre as tabelas
+
+
+
+
+
