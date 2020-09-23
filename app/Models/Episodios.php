@@ -10,9 +10,15 @@ class Episodios extends Model
 {
     public $timestamps = false;
     public $fillable = ['temporada','numero','assitido','serie_id'];
+
     public function serie()
     {
         return $this->belongTo(Series::class);
+    }
+
+    public function getAssistidoAttribute($assistido): bool
+    {
+        return $assistido;
     }
 
 }

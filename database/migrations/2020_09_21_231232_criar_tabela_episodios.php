@@ -17,7 +17,7 @@ class CriarTabelaEpisodios extends Migration
             $table->integer('id',true);
             $table->integer('temporada');
             $table->integer('numero');
-            $table->boolean('assistido');
+            $table->boolean('assistido')->default(false);
             $table->integer('serie_id');
 
             //$table->foreign('serie_id')->references('id')->on('series');

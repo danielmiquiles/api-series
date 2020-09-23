@@ -19,11 +19,21 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api'], function () use ($router){
-    $router->post('series','SeriesController@inserir');
-    $router->get('series', 'SeriesController@index');
-    $router->get('series/{id}', 'SeriesController@buscarPorId');
-    $router->put('series/{id}', 'SeriesController@atualizar');
-    $router->delete('series/{id}', 'SeriesController@deletar');
+    $router->group(['prefix' => 'series'], function () use($router){
+        $router->post('','SeriesController@inserir');
+        $router->get('', 'SeriesController@index');
+        $router->get('{id}', 'SeriesController@buscarPorId');
+        $router->put('{id}', 'SeriesController@atualizar');
+        $router->delete('{id}', 'SeriesController@deletar');
+    });
+    $router->group(['prefix'=>'episodios'],function () use($router){
+        $router->post('','EpisodiosController@inserir');
+        $router->get('', 'EpisodiosController@index');
+        $router->get('{id}', 'EpisodiosController@buscarPorId');
+        $router->put('{id}', 'EpisodiosController@atualizar');
+        $router->delete('{id}', 'EpisodiosController@deletar');
+    });
+
 });
 
 
