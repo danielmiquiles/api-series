@@ -18,13 +18,14 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->group(['prefix' => 'api'], function () use ($router){
+$router->group(['prefix' => 'api', 'middleware' => 'auth'], function () use ($router){
     $router->group(['prefix' => 'series'], function () use($router){
         $router->post('','SeriesController@inserir');
         $router->get('', 'SeriesController@index');
         $router->get('{id}', 'SeriesController@buscarPorId');
         $router->put('{id}', 'SeriesController@atualizar');
         $router->delete('{id}', 'SeriesController@deletar');
+        $router->get('{serieId}/episodios', 'EpisodiosController@buscaPorSerie');
     });
     $router->group(['prefix'=>'episodios'],function () use($router){
         $router->post('','EpisodiosController@inserir');
@@ -35,6 +36,8 @@ $router->group(['prefix' => 'api'], function () use ($router){
     });
 
 });
+
+$router->post('/api/login', 'TokenController@gerarToken');
 
 
 

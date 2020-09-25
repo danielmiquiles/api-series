@@ -12,6 +12,15 @@
     com duas propriedades publicas: $timestamps = false e $fillables que é o conteudo
     que vou querer ter acesso na relacionada ao model
     alem das funções de relação entre as tabelas
+    se as classes de controllers fizerem a mesma coisa apenas alterando a tabela que será
+    aplicado, usar um controller pai abstrato é uma boa pra não ficar repetindo código
+    o elloquent usa muttators para os atributos, não podem ser acessados diretamente
+    por isso, qualquer alteração, deve ser feita usando get_nomedoatributoAttribute
+    api podem ser publicas ou privadas
+    as privadas usam tokens como autenticação, geralmente jwt
+    descomentar middleware de autenticação do lumen
+    e criar o controller de criação do token
+
 
 
 
