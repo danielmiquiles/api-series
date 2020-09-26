@@ -21,6 +21,48 @@
     descomentar middleware de autenticação do lumen
     e criar o controller de criação do token
 
+    Então pessoal, chegamos ao final de mais um curso, esse foi o treinamento de
+    criação de mapeio Restful com o Lumen, Lumen que é essa versão mais leve, mais
+    reduzida do Laravel, que fornece mais performance, a troco de ter menos funcionalidade.
+
+    O Lumen ajudou a gente bastante na hora de criar uma API, forneceu tudo que a gente precisou,
+    e até algumas funcionalidades bem interessantes, que a gente não tinha visto no Laravel. Então,
+    como vimos bastante coisa, queria dar uma revisada com vocês, a gente iniciou criando nosso primeiro
+    controller, o controller de séries.
+
+    Só que no controller de séries, depois a gente acabou refatorando, fazendo uma grande refatoração
+    para um controller base, fizemos uma boa refatoração no nosso caso utilizando um único controller
+    pra servir os dois recursos, tanto séries quanto episódios, falando em recursos, a gente conheceu
+    o Padrão Arquitetural rest, como montar APIs seguindo esses padrões, seguindo esses conceitos,
+    utilizamos bastante os status HTTP, conversamos bastante sobre isso, buscamos trabalhar com formatos
+    de dados amigável, pra fornecer dados de API, vimos recursos interessantes, que são do Eloquent, podem
+    ser utilizados também no Laravel, como por exemplo de accessories e mutators, que são formas diferentes
+    de acessar, formas diferentes de fornecer os atributos, da nossa moda, da nossa classe, através dos
+    accessories.
+
+    Vimos também como trabalhar com autenticação com o Lumen, já que uma API não deve armazenar sessão,
+    não armazenando sessão, a gente precisou conhecer um pouco sobre Tokens, a gente trabalhou com JWT,
+    e no final a gente saiu como nossa própria classe de autenticação, nosso próprio midware de autenticação,
+    utilizando o JWT, a gente viu uma vida muito legal, quanto do Eloquent, sobre paginação de resultados,
+    a gente viu que ao paginar os resultados, ele entrega várias informações a mais pro cliente, informações
+    essas que auxiliam na navegação pela API, com isso, nós mesmos, utilizando os acessories, adicionamos
+    algumas informações a mais para navegação, e esse é o conceito de hypermedia as the engine of the
+    application state, que a gente conversou um pouco, aquele conceito de auxiliar interação do cliente
+    com nossa API.
+
+    Enfim, foi bastante coisa que a gente estudou, isso não é tudo que o Lumen tem a oferecer, que o
+    Laravel tem a oferecer, existe muito mais coisa, os conceitos que aprendemos a mais de Laravel são
+    aplicáveis aqui, como por exemplo, de teste, dicas de Deploy, toda a validação um pouco mais completa,
+    sem levar em consideração os form requests, a gente consegue adicionar validação aqui também, colocando
+    mensagens personalizadas, a gente pode utilizar também os conceitos que aprendeu aqui, como accessories
+    e mutators em projetos em Laravel, enfim, o Lumen faz parte do ecossistema Laravel, como se fosse um irmão
+    mais novo do Laravel, o conhecimento de um é aplicável no outro, então recomendo muito que você continue
+    estudando tanto Laravel quanto Lumen, e outros Frameworks, claro, boas práticas, enfim, espero que você
+    tenha aproveitado, espero que você tenha gostado, curtido esse treinamento, e te vejo em futuros
+    treinamentos aqui na Alura.
+
+    Forte abraço e bons estudos.
+
 
 
 
